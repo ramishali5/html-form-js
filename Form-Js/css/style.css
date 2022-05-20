@@ -1,0 +1,253 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  border: 1px dotted #b61924;
+  border-radius: 20%;
+  margin-right: 1%;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  border-radius: 20%;
+  transition-duration: 0.4s;
+}
+
+li.dropdown {
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.form{
+  width: 100%;
+  line-height: 35px;
+  margin: 0 auto;
+}
+#form{
+   position: absolute;
+   width: 22%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 35%;
+  padding: 20px;
+}
+.input{
+  border: none;
+  border-bottom: 2px solid #182E35;
+  width: 90%;
+  padding: 18px 10px 10px;
+  border-radius: 4px;
+  background:transparent;
+  font-size: 16px;
+  color: #fff;
+}
+.input:focus {
+  outline: none;
+  background: transparent;
+}
+#submit{
+  margin: auto;
+  background-color: #182E35;
+  border: 1px solid #182E35;
+  color: #fff;
+}
+#submit:hover{
+  /*background-color: #8BE002;*/
+  background-color: #4CE046;
+  color: #000;
+  border-color: #8BE002;
+}
+#reset{
+  background-color: #C5CBCD;
+  border: 1px solid #4B626D;
+  color: #000;
+}
+#reset:hover{
+  background-color: #4B626D;
+  color: #fff;
+  }
+.button{
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+#Login{
+  background-color: #C5CBCD;
+  border: 1px solid #4B626D;
+  color: #000;
+  padding: 5px;
+}
+#Login a{
+  color: #000;
+}
+#Login:hover{
+  background-color: #4B626D;
+  color: #fff;
+  }
+  #Login a:hover{
+  color: #fff;
+  }
+::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+#gender{
+  font-size: 20px;
+}
+#input2{
+  margin-bottom: 15%;
+}
+
+
+
+
